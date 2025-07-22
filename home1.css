@@ -238,13 +238,13 @@ body {
 .slide-content h1 {
     color: white;
     font-size: 48px;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9);
 }
 
 .slide-content p {
     color: white;
     font-size: 24px;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9);
 }
 
 
