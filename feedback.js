@@ -38,8 +38,10 @@
             const field = document.getElementById(fieldId);
             const errorElement = document.getElementById(errorId);
             let isValid = true;
-
-            if (fieldId === 'email') {
+            if (fieldId === 'name') {
+            const nameRegex = /^[A-Za-z\s]{3,}$/;
+            isValid = field.value.trim() !== '' && nameRegex.test(field.value);
+            }else if (fieldId === 'email') {
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 isValid = field.value.trim() !== '' && emailRegex.test(field.value);
             } else if (fieldId === 'phone') {

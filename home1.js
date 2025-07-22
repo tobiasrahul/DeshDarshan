@@ -101,3 +101,24 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.opacity = '0';
     showSlide(0);
 });
+
+// Scroll-to-Top Button Logic
+window.onscroll = function () {
+  const btn = document.getElementById("scrollTopBtn");
+  if (!btn) return;
+
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("scrollTopBtn");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+});

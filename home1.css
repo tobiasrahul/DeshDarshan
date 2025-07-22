@@ -520,3 +520,31 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+#scrollTopBtn {
+  position: fixed;
+  display: flex;
+  align-items: center; /* Added for vertical centering */
+  justify-content: center;
+  padding: 0%;
+  height: 2rem;
+  width: 2rem;
+  bottom: 5.625rem; /* 90px converted to rem (90/16) */
+  right: 1.875rem; /* 30px converted to rem (30/16) */
+  z-index: 100;
+  font-size: 1.25rem; /* 20px converted to rem */
+  background: linear-gradient(135deg, #ff9933, #ffb366);
+  color: white;
+  border: none;
+  padding: 0; /* Changed from 10px 14px to 0 since we're using flex centering */
+  border-radius: 10%;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#scrollTopBtn:hover {
+  background: linear-gradient(135deg, #e86800, #ff9933); /* Updated to match gradient pattern */
+  transform: scale(1.1);
+}
