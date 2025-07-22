@@ -101,3 +101,26 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.opacity = '0';
     showSlide(0);
 });
+
+// Scroll-top button
+
+window.onscroll = function () {
+  const btn = document.getElementById("scrollTopBtn");
+  if (!btn) return;
+
+  if (window.scrollY > 300) {
+    btn.classList.add("show");
+  } else {
+    btn.classList.remove("show");
+  }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("scrollTopBtn");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+});
+
