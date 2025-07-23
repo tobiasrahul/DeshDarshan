@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spirit of India</title>
-  <link rel="stylesheet" href="home.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spirit of India</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 data-translate="header">Desh Darshan</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="about us.html" data-translate="nav-about">About Us</a></li>
+                <li><a href="explore.html" data-translate="nav-explore">Explore India</a></li>
+                <li><a href="feedback.html" data-translate="nav-feedback">Feedback</a></li>
+                <li><a href="contactus.html" data-translate="nav-contact">Contact Us</a></li>
+            </ul>
+            <div class="nav-buttons">
+                 <a href="login.html"><button class="btn-login" href="login.html" data-translate="nav-login">Login</button></a>
+                 <a href="signup.html"><button class="btn-signup" data-translate="nav-signup">Signup</button></a>
+                
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-logo">
-        <h2 data-translate="header">Desh Darshan</h2>
-      </div>
-      <ul class="nav-menu">
-        <li><a href="about us.html" data-translate="nav-about">About Us</a></li>
-        <li><a href="explore.html" data-translate="nav-explore">Explore India</a></li>
-        <li><a href="feedback.html" data-translate="nav-feedback">Feedback</a></li>
-        <li><a href="contactus.html" data-translate="nav-contact">Contact Us</a></li>
-      </ul>
-      <div class="nav-buttons">
-        <a href="login.html" class="btn-login">
-          <span>Login</span>
-          <i class="fas fa-sign-in-alt"></i>
-        </a>
-        <a href="signup.html" class="btn-signup">
-          <span>Signup</span>
-          <i class="fas fa-user-plus"></i>
-        </a>
-      </div>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </nav>
 
   <!-- Hero Section with Slideshow -->
   <section class="hero">
@@ -229,14 +224,64 @@
       </div>
     </div>
   </section>
+    
+    <!--footer-->
+<footer>
+        <div class="footer-content-wrapper">
+            <!-- Section 1: About Desh Darshan -->
+            <div class="footer-section">
+                <h3 class="footer-section-title">Desh Darshan</h3>
+                <p> 
+                    Desh Darshan is your gateway to the vibrant and diverse culture of India. We aim to introduce the world to India's rich heritage, traditions, arts, and history.
+                </p>
+            </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p data-translate="footer">Privacy Policy | All Rights Reserved | Made by Sampada Tiwari ❤</p>
-    </div>
-  </footer>
+            <!-- Section 2: Quick Links -->
+            <div class="footer-section">
+                <h3 class="footer-section-title">Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="about us.html" class="footer-link">About Us</a></li>
+                    <li><a href="explore.html" class="footer-link">Explore India</a></li>
+                    <li><a href="feedback.html" class="footer-link">Feedback</a></li>
+                    <li><a href="contactus.html" class="footer-link">Contact Us</a></li>
+                </ul>
+            </div>
 
-  <script src="home.js"></script>
-</body>
+            <!-- Section 3: Contact Us -->
+            <div class="footer-section">
+                <h3 class="footer-section-title">Contact Us</h3>
+                <ul>
+                    <li class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@deshdarshan.in</span>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 1234567890</span>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>New Delhi, India</span>
+                    </li>
+                </ul>
+            </div>
+
+        <!-- Section 4: Follow Us -->
+        <div class="footer-section">
+            <h3 class="footer-section-title">Follow Us</h3>
+            <div class="social-icons-container">
+                <a href="https://www.linkedin.com/in/sampada-tiwari-217123257" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/sampadatiwari29?igsh=MXF5ZDVzMWwyemIyag==" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        </div>
+        <!--copyright -->
+        <div class="copyright-section">
+           &copy; <span id="year"></span> Desh Darshan. All rights reserved.
+        </div>
+    </footer>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+    <script src="home.js"></script>
+  </body>
 </html>
