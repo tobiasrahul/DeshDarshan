@@ -55,7 +55,7 @@ This Code of Conduct applies to all areas where DeshDarshan is represented, incl
 
 
 📄 Attribution:
-This Code of Conduct adapts the Contributor Covenant.
+This Code of Conduct adapts the 
 [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
 
 Let’s preserve India’s legacy responsibly!
