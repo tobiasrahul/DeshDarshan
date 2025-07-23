@@ -393,6 +393,7 @@
 </head>
 <body>
     <!-- Background Audio -->
+     <!-- mic icon -->
      <span id="audioToggle" onclick="toggleAudio()" title="Toggle Sound">🔊</span>
     <audio id="bgAudio" loop>
         <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
@@ -831,7 +832,7 @@
             }
         });
 
-//background-audio toggle
+//background-audio and icon toggle feature
         const audio = document.getElementById('bgAudio');
     const toggleIcon = document.getElementById('audioToggle');
     let isPlaying = false;
