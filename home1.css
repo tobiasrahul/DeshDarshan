@@ -267,11 +267,14 @@ body {
 
 /* Section Titles */
 .section-title {
-    text-align: center;
+  text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #333;
-    position: relative;
+  margin-bottom: 3rem;
+  color: #333;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
 }
 
 .section-title::after {
@@ -284,6 +287,13 @@ body {
     height: 4px;
     background: black;
     border-radius: 2px;
+}
+
+.section-title.show {
+  opacity: 1;
+  transform: translateY(0);
+  font-size: 2.8rem;
+  font-weight: 800;
 }
 
 /* Festivals and Culture Section */
@@ -556,8 +566,12 @@ body {
 /* Small screens (phones) */
 @media screen and (max-width: 500px) {
   #scrollTopBtn {
-    bottom: 6.8rem;   /* Raised slightly above footer for phones */
+    bottom: 6.8rem;   
     right: 1rem;
   }
 }
+
+
+
+
 
