@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
         * {
@@ -29,12 +30,15 @@
             top: 0;
             left: 0;
             right: 0;
-            background: rgba(0, 0, 0, 0.95);
-            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(12px);          
+            -webkit-backdrop-filter: blur(12px);  
             z-index: 1000;
             padding: 1.2rem 0;
             transform: translateY(-100%);
             animation: slideDown 0.8s ease-out 0.3s forwards;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.3s ease;
         }
 
@@ -68,7 +72,7 @@
         }
 
         .nav-links a {
-            color: white;
+            color: rgb(16, 15, 15);
             text-decoration: none;
             font-weight: 500;
             padding: 0.5rem 0;
@@ -394,25 +398,147 @@
             box-shadow: 0 15px 40px rgba(255, 153, 51, 0.3);
         }
 
-        /* Footer */
-        .footer {
-            background: #000;
-            padding: 2rem;
+        /*footer */
+
+        footer {
+            background-color: black; 
+            color: white; 
+            padding: 2.5rem 1.5rem; 
+            margin-top: auto; 
+            width: 100%; 
+            box-sizing: border-box; 
+            bottom: 0;
+           
+        }
+
+        .footer-content-wrapper {
+            max-width: 80rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem; 
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 2rem; 
+            padding-top: 0px;
+        }
+
+        .footer-section p {
+            font-size: 0.875rem; 
+            color: #a0aec0; 
+            line-height: 1.625;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem; 
+        }
+
+        .footer-link, .footer-contact-item {
+            color: #A0AEC0;
+            transition: color 0.3s ease;
+            text-decoration: none;
+            font-size: 0.875rem;
+            display: flex; 
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .footer-link:hover, .footer-contact-item:hover {
+            color: #F7FAFC;
+        }
+
+        .footer-contact-item span{
+            margin-left: 5px;
+        }
+
+        .footer-section {
+            flex: 1; 
+            min-width: 180px; 
+        }
+
+        .footer-section-title {
+            color: white; 
+            font-weight: 700; 
+            margin-bottom: 1rem;
+            font-size: 1.125rem; 
+            font-family: Arial, Helvetica, sans-serif ;
+            transition: text-shadow 0.5s ease;
+        }
+
+        .footer-section-title:hover{
+            font-size:1.2rem ;
+            font-weight:750 ;
+            text-shadow: 1px 1px 8px white; 
+        }
+
+        .social-icons-container {
+            margin-top: 10px;
+            display: flex;
+            gap: 1rem; 
+            
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem; 
+            height: 2.5rem;
+            background-color: #4A5568; 
+            color: #CBD5E0; 
+            border: 1px solid #4A5568; 
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+            text-decoration: none; 
+            border-radius: 50%;
+            
+        }
+
+        .social-icon i { 
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .social-icon:hover {
+            background-color:rgba(255, 255, 255, 0.804); 
+            color: #1A202C; 
+            border-color:rgba(255, 255, 255, 0.804); 
+            box-shadow: 0 0 15px white;
+        }
+
+
+        .copyright-section {
+            border-top: 1px solid #4a5568; 
+            margin-top: 2rem; 
+            padding-top: 1.5rem; 
             text-align: center;
-            margin-top: 4rem;
-            transform: translateY(100%);
-            opacity: 0;
-            transition: all 0.8s ease;
+            color: #a0aec0; 
+            font-size: 0.875rem;
         }
 
-        .footer.visible {
-            transform: translateY(0);
-            opacity: 1;
+        
+        @media (min-width: 768px) { 
+            .footer-content-wrapper {
+                grid-template-columns: repeat(4, 1fr); 
+            }
         }
 
-        .footer p {
-            color: white;
-            font-size: 1rem;
+        @media (min-width: 640px) { 
+            .footer-content-wrapper {
+                padding-left: 1.5rem; 
+                padding-right: 1.5rem; 
+            }
+        }
+
+        @media (min-width: 1024px) { 
+            .footer-content-wrapper {
+                padding-left: 2rem; 
+                padding-right: 2rem; 
+            }
         }
 
         /* Animations */
@@ -490,11 +616,11 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="logo">Desh Darshan</div>
+            <div class="logo" id="logoTitle">Desh Darshan</div>
             <ul class="nav-links">
-                <li><a href="destination.html">Famous Destinations</a></li>
-                <li><a href="crazyfacts.html">Crazy Facts</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="destination.html" id="navDest">Famous Destinations</a></li>
+                <li><a href="crazyfacts.html" id="navFacts">Crazy Facts</a></li>
+                <li><a href="contactus.html" id="navContact">Contact Us</a></li>
             </ul>
             <div class="language-dropdown">
                 <button class="language-btn" id="languageBtn">
@@ -522,8 +648,8 @@
                 <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Himalayan Landscape">
                 <div class="slide-overlay">
                     <div class="slide-content">
-                        <h2>Nature's Symphony 🌿</h2>
-                        <p>Where mountains touch the sky and rivers sing eternal songs</p>
+                        <h2 id="slideTitle1">Nature's Symphony 🌿</h2>
+                        <p id="slideDesc1">Where mountains touch the sky and rivers sing eternal songs</p>
                     </div>
                 </div>
             </div>
@@ -531,8 +657,8 @@
                 <img src="festivals/23.jpg" alt="Holi Festival">
                 <div class="slide-overlay">
                     <div class="slide-content">
-                        <h2>Festivals of Joy 🎉</h2>
-                        <p>Colors that paint the soul and celebrations that unite hearts</p>
+                        <h2 id="slideTitle2">Festivals of Joy 🎉</h2>
+                        <p id="slideDesc2">Colors that paint the soul and celebrations that unite hearts</p>
                     </div>
                 </div>
             </div>
@@ -540,8 +666,8 @@
                 <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Indian Cuisine">
                 <div class="slide-overlay">
                     <div class="slide-content">
-                        <h2>Taste of Tradition 🍲</h2>
-                        <p>Flavors that tell stories of generations and spices that awaken souls</p>
+                        <h2 id="slideTitle3">Taste of Tradition 🍲</h2>
+                        <p id="slideDesc3">Flavors that tell stories of generations and spices that awaken souls</p>
                     </div>
                 </div>
             </div>
@@ -549,8 +675,8 @@
                 <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Rajasthan Fort">
                 <div class="slide-overlay">
                     <div class="slide-content">
-                        <h2>Living Heritage 🏛️</h2>
-                        <p>Stones that whisper ancient tales and walls that guard timeless secrets</p>
+                        <h2 id="slideTitle4">Living Heritage 🏛️</h2>
+                        <p id="slideDesc4">Stones that whisper ancient tales and walls that guard timeless secrets</p>
                     </div>
                 </div>
             </div>
@@ -558,8 +684,8 @@
                 <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Kerala Backwaters">
                 <div class="slide-overlay">
                     <div class="slide-content">
-                        <h2>Backwater Bliss 🌅</h2>
-                        <p>Serene waters that mirror paradise and gentle giants that roam free</p>
+                        <h2 id="slideTitle5">Backwater Bliss 🌅</h2>
+                        <p id="slideDesc5">Serene waters that mirror paradise and gentle giants that roam free</p>
                     </div>
                 </div>
             </div>
@@ -1200,12 +1326,69 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer" id="footer">
-        <p>Privacy Policy | All Rights Reserved | Made by Sampada Tiwari ❤</p>
+    <!--footer-->
+<footer>
+        <div class="footer-content-wrapper">
+            <!-- Section 1: About Desh Darshan -->
+            <div class="footer-section">
+                <h3 class="footer-section-title">Desh Darshan</h3>
+                <p> 
+                    Desh Darshan is your gateway to the vibrant and diverse culture of India. We aim to introduce the world to India's rich heritage, traditions, arts, and history.
+                </p>
+            </div>
+
+            <!-- Section 2: Quick Links -->
+            <div class="footer-section">
+                <h3 class="footer-section-title">Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="about us.html" class="footer-link">About Us</a></li>
+                    <li><a href="explore.html" class="footer-link">Explore India</a></li>
+                    <li><a href="feedback.html" class="footer-link">Feedback</a></li>
+                    <li><a href="contactus.html" class="footer-link">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 3: Contact Us -->
+            <div class="footer-section">
+                <h3 class="footer-section-title">Contact Us</h3>
+                <ul>
+                    <li class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@deshdarshan.in</span>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 1234567890</span>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>New Delhi, India</span>
+                    </li>
+                </ul>
+            </div>
+
+        <!-- Section 4: Follow Us -->
+        <div class="footer-section">
+            <h3 class="footer-section-title">Follow Us</h3>
+            <div class="social-icons-container">
+                <a href="#" class="social-icon" aria-label="Facebook" ><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" aria-label="Behance"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        </div>
+        <!--copyright -->
+        <div class="copyright-section">
+           &copy; <span id="year"></span> Desh Darshan. All rights reserved.
+        </div>
     </footer>
+    <!-- Footer -->`
+
 
     <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
         // Slideshow functionality
         let currentSlideIndex = 0;
         const slides = document.querySelectorAll('.slide');
@@ -1266,47 +1449,197 @@
         // Language switching functionality
         const translations = {
             en: {
-                'language-btn': '🌐 Language ▾'
+                'language-btn': '🌐 Language ▾',
+                'logoTitle': 'Desh Darshan',
+                'navDest': 'Famous Destinations',
+                'navFacts': 'Crazy Facts',
+                'navContact': 'Contact Us',
+                'footerText': 'Privacy Policy | All Rights Reserved | Made by Sampada Tiwari ❤',
+                'slideTitle1': "Nature's Symphony 🌿",
+                'slideDesc1': "Where mountains touch the sky and rivers sing eternal songs",
+                'slideTitle2': "Festivals of Joy 🎉",
+                'slideDesc2': "Colors that paint the soul and celebrations that unite hearts",
+                'slideTitle3': "Taste of Tradition 🍲",
+                'slideDesc3': "Flavors that tell stories of generations and spices that awaken souls",
+                'slideTitle4': "Living Heritage 🏛️",
+                'slideDesc4': "Stones that whisper ancient tales and walls that guard timeless secrets",
+                'slideTitle5': "Backwater Bliss 🌅",
+                'slideDesc5': "Serene waters that mirror paradise and gentle giants that roam free"
             },
             hi: {
-                'language-btn': '🌐 भाषा ▾'
+                'language-btn': '🌐 भाषा ▾',
+                'logoTitle': 'देशदर्शन',
+                'navDest': 'प्रसिद्ध स्थल',
+                'navFacts': 'मजेदार तथ्य',
+                'navContact': 'संपर्क करें',
+                'footerText': 'गोपनीयता नीति | सर्वाधिकार सुरक्षित | संपदा तिवारी द्वारा निर्मित ❤',
+                'slideTitle1': "प्रकृति की स्वर की समता 🌿",
+                'slideDesc1': "जहाँ पर्वत आकाश को छूते हैं और नदियाँ अनंत गीत गाती हैं",
+                'slideTitle2': "खुशियों के त्योहार 🎉",
+                'slideDesc2': "रंग जो आत्मा को रंगते हैं और उत्सव जो दिलों को जोड़ते हैं",
+                'slideTitle3': "परंपरा का स्वाद 🍲",
+                'slideDesc3': "स्वाद जो पीढ़ियों की कहानियाँ सुनाते हैं और मसाले जो आत्मा को जगाते हैं",
+                'slideTitle4': "जीवित विरासत 🏛️",
+                'slideDesc4': "पत्थर जो प्राचीन कहानियाँ फुसफुसाते हैं और दीवारें जो कालातीत रहस्य छुपाती हैं",
+                'slideTitle5': "बैकवॉटर ब्लिस 🌅",
+                'slideDesc5': "शांत जल जो स्वर्ग का प्रतिबिंब हैं और विशाल जीव जो स्वतंत्र घूमते हैं"
+            },
+            mr: {
+                'language-btn': '🌐 भाषा ▾',
+                'logoTitle': 'देशदर्शन',
+                'navDest': 'प्रसिद्ध स्थळे',
+                'navFacts': 'गमतीशीर तथ्ये',
+                'navContact': 'संपर्क करा',
+                'footerText': 'गोपनीयता धोरण | सर्व हक्क राखीव | संपदा तिवारी यांनी बनवले ❤',
+                'slideTitle1': "निसर्गाची सिम्फनी 🌿",
+                'slideDesc1': "जिथे पर्वत आकाशाला स्पर्श करतात आणि नद्या अनंत गाणी गातात",
+                'slideTitle2': "आनंदाचे सण 🎉",
+                'slideDesc2': "रंग जे आत्म्याला रंगवतात आणि सण जे हृदयांना एकत्र करतात",
+                'slideTitle3': "परंपरेचा स्वाद 🍲",
+                'slideDesc3': "स्वाद जे पिढ्यांच्या कथा सांगतात आणि मसाले जे आत्म्याला जागृत करतात",
+                'slideTitle4': "जिवंत वारसा 🏛️",
+                'slideDesc4': "दगड जे प्राचीन कथा सांगतात आणि भिंती जे शाश्वत रहस्ये राखतात",
+                'slideTitle5': "बॅकवॉटर ब्लिस 🌅",
+                'slideDesc5': "शांत पाणी जे स्वर्गाचे प्रतिबिंब आहे आणि विशाल प्राणी जे मुक्तपणे फिरतात"
             },
             ta: {
-                'language-btn': '🌐 மொழி ▾'
+                'language-btn': '🌐 மொழி ▾',
+                'logoTitle': 'தேசதர்ஷன்',
+                'navDest': 'பிரபலமான இடங்கள்',
+                'navFacts': 'விசித்திரமான தகவல்கள்',
+                'navContact': 'தொடர்பு கொள்ள',
+                'footerText': 'தனியுரிமைக் கொள்கை | அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை | சம்பதா திவாரி உருவாக்கியது ❤',
+                'slideTitle1': "இயற்கையின் இசை 🌿",
+                'slideDesc1': "மலைகள் வானத்தை தொடும் இடம், நதிகள் என்றென்றும் பாடும் இடம்",
+                'slideTitle2': "மகிழ்ச்சியின் விழாக்கள் 🎉",
+                'slideDesc2': "ஆன்மாவை வண்ணமயமாக்கும் நிறங்கள், இதயங்களை ஒன்றிணைக்கும் விழாக்கள்",
+                'slideTitle3': "பாரம்பரிய சுவை 🍲",
+                'slideDesc3': "பெருங்குடி கதைகளை சொல்லும் சுவைகள், ஆன்மாவை எழுப்பும் மசாலா",
+                'slideTitle4': "வாழும் பாரம்பரியம் 🏛️",
+                'slideDesc4': "பழமையான கதைகளை சொல்வது கற்கள், காலமற்ற ரகசியங்களை பாதுகாக்கும் சுவர்கள்",
+                'slideTitle5': "பின்நீர் மகிழ்ச்சி 🌅",
+                'slideDesc5': "சாந்தமான நீர் பரதீசை பிரதிபலிக்கிறது, மென்மையான விலங்குகள் சுதந்திரமாக சுற்றுகின்றன"
             },
             bn: {
-                'language-btn': '🌐 ভাষা ▾'
+                'language-btn': '🌐 ভাষা ▾',
+                'logoTitle': 'দেশদর্শন',
+                'navDest': 'বিখ্যাত স্থান',
+                'navFacts': 'মজার তথ্য',
+                'navContact': 'যোগাযোগ করুন',
+                'footerText': 'গোপনীয়তা নীতি | সর্বস্বত্ব সংরক্ষিত | সম্পদা তিওয়ারি দ্বারা নির্মিত ❤',
+                'slideTitle1': "প্রকৃতির সিম্ফনি 🌿",
+                'slideDesc1': "যেখানে পাহাড় আকাশ ছুঁয়েছে এবং নদী চিরন্তন গান গায়",
+                'slideTitle2': "আনন্দের উৎসব 🎉",
+                'slideDesc2': "রং যা আত্মাকে রাঙায় এবং উৎসব যা হৃদয়কে একত্রিত করে",
+                'slideTitle3': "ঐতিহ্যের স্বাদ 🍲",
+                'slideDesc3': "স্বাদ যা প্রজন্মের গল্প বলে এবং মশলা যা আত্মাকে জাগিয়ে তোলে",
+                'slideTitle4': "জীবন্ত ঐতিহ্য 🏛️",
+                'slideDesc4': "পাথর যা প্রাচীন গল্প বলে এবং দেয়াল যা চিরন্তন রহস্য রক্ষা করে",
+                'slideTitle5': "ব্যাকওয়াটার ব্লিস 🌅",
+                'slideDesc5': "শান্ত জল যা স্বর্গের প্রতিচ্ছবি এবং বিশাল প্রাণী যা মুক্তভাবে ঘোরে"
             },
             pa: {
-                'language-btn': '🌐 ਭਾਸ਼ਾ ▾'
+                'language-btn': '🌐 ਭਾਸ਼ਾ ▾',
+                'logoTitle': 'ਦੇਸ਼ਦਰਸ਼ਨ',
+                'navDest': 'ਮਸ਼ਹੂਰ ਥਾਵਾਂ',
+                'navFacts': 'ਮਜ਼ੇਦਾਰ ਤੱਥ',
+                'navContact': 'ਸੰਪਰਕ ਕਰੋ',
+                'footerText': 'ਪਰਦੇਦਾਰੀ ਨੀਤੀ | ਸਾਰੇ ਹੱਕ ਰਾਖਵੇਂ | ਸੰਪਦਾ ਤਿਵਾਰੀ ਵਲੋਂ ਬਣਾਇਆ ਗਿਆ ❤',
+                'slideTitle1': "ਕੁਦਰਤ ਦੀ ਸਿਮਫਨੀ 🌿",
+                'slideDesc1': "ਜਿੱਥੇ ਪਹਾੜ ਅਕਾਸ਼ ਨੂੰ ਛੂਹਦੇ ਹਨ ਅਤੇ ਦਰਿਆ ਸਦੀਵੀ ਗੀਤ ਗਾਂਦੇ ਹਨ",
+                'slideTitle2': "ਖੁਸ਼ੀਆਂ ਦੇ ਤਿਉਹਾਰ 🎉",
+                'slideDesc2': "ਰੰਗ ਜੋ ਆਤਮਾ ਨੂੰ ਰੰਗਦੇ ਹਨ ਅਤੇ ਤਿਉਹਾਰ ਜੋ ਦਿਲਾਂ ਨੂੰ ਜੋੜਦੇ ਹਨ",
+                'slideTitle3': "ਪਰੰਪਰਾ ਦਾ ਸਵਾਦ 🍲",
+                'slideDesc3': "ਸਵਾਦ ਜੋ ਪੀੜ੍ਹੀਆਂ ਦੀਆਂ ਕਹਾਣੀਆਂ ਦੱਸਦੇ ਹਨ ਅਤੇ ਮਸਾਲੇ ਜੋ ਆਤਮਾ ਨੂੰ ਜਗਾਉਂਦੇ ਹਨ",
+                'slideTitle4': "ਜੀਵੰਤ ਵਿਰਾਸਤ 🏛️",
+                'slideDesc4': "ਪੱਥਰ ਜੋ ਪੁਰਾਣੀਆਂ ਕਹਾਣੀਆਂ ਸੁਣਾਉਂਦੇ ਹਨ ਅਤੇ ਕੰਧਾਂ ਜੋ ਸਦੀਵੀ ਭੇਦ ਰੱਖਦੀਆਂ ਹਨ",
+                'slideTitle5': "ਬੈਕਵਾਟਰ ਖੁਸ਼ੀ 🌅",
+                'slideDesc5': "ਸ਼ਾਂਤ ਪਾਣੀ ਜੋ ਸਵਰਗ ਦਾ ਪ੍ਰਤੀਬਿੰਬ ਹੈ ਅਤੇ ਵੱਡੇ ਜੀਵ ਜੋ ਆਜ਼ਾਦੀ ਨਾਲ ਘੁੰਮਦੇ ਹਨ"
             },
             gu: {
-                'language-btn': '🌐 ભાષા ▾'
-            } ,
-            te : {
-                 'language-btn': '🌐 భాష ▾'
+                'language-btn': '🌐 ભાષા ▾',
+                'logoTitle': 'દેશદર્શન',
+                'navDest': 'પ્રસિદ્ધ સ્થળો',
+                'navFacts': 'મજેદાર તથ્યો',
+                'navContact': 'સંપર્ક કરો',
+                'footerText': 'ગોપનીયતા નીતિ | સર્વાધિકાર સુરક્ષિત | સંપદા તિવારી દ્વારા બનાવાયું ❤',
+                'slideTitle1': "પ્રકૃતિની સિમ્ફની 🌿",
+                'slideDesc1': "જ્યાં પર્વતો આકાશને સ્પર્શે છે અને નદીઓ શાશ્વત ગીતો ગાય છે",
+                'slideTitle2': "આનંદના તહેવારો 🎉",
+                'slideDesc2': "રંગો જે આત્માને રંગે છે અને તહેવારો જે દિલોને જોડે છે",
+                'slideTitle3': "પરંપરાનો સ્વાદ 🍲",
+                'slideDesc3': "સ્વાદો જે પેઢીઓની વાર્તાઓ કહે છે અને મસાલા જે આત્માને જગાડે છે",
+                'slideTitle4': "જીવંત વારસો 🏛️",
+                'slideDesc4': "પથ્થરો જે પ્રાચીન વાર્તાઓ કહે છે અને દિવાલો જે શાશ્વત રહસ્યો રાખે છે",
+                'slideTitle5': "બેકવોટર આનંદ 🌅",
+                'slideDesc5': "શાંત પાણી જે સ્વર્ગનું પ્રતિબિંબ છે અને વિશાળ જીવો જે મુક્તપણે ફરતા હોય છે"
+            },
+            te: {
+                'language-btn': '🌐 భాష ▾',
+                'logoTitle': 'దేశదర్శన్',
+                'navDest': 'ప్రసిద్ధ ప్రదేశాలు',
+                'navFacts': 'విచిత్రమైన విషయాలు',
+                'navContact': 'సంప్రదించండి',
+                'footerText': 'గోప్యతా విధానం | అన్ని హక్కులు పరిరక్షించబడ్డాయి | సంపద తివారి తయారు చేసింది ❤',
+                'slideTitle1': "ప్రకృతి యొక్క సింఫనీ 🌿",
+                'slideDesc1': "ఎక్కడ పర్వతాలు ఆకాశాన్ని తాకుతాయో, నదులు శాశ్వత గీతాలు పాడుతాయో",
+                'slideTitle2': "ఆనందోత్సవాలు 🎉",
+                'slideDesc2': "ఆత్మను రంగించే రంగులు, హృదయాలను కలిపే వేడుకలు",
+                'slideTitle3': "పారంపర్య రుచి 🍲",
+                'slideDesc3': "రుచులు తరాల కథలు చెబుతాయి, మసాలాలు ఆత్మను మేల్కొలుపుతాయి",
+                'slideTitle4': "జీవంత వారసత్వం 🏛️",
+                'slideDesc4': "రాళ్లు పురాతన కథలు చెబుతాయి, గోడలు శాశ్వత రహస్యాలను కాపాడుతాయి",
+                'slideTitle5': "బ్యాక్వాటర్ ఆనందం 🌅",
+                'slideDesc5': "ప్రశాంతమైన నీరు పరదైస్ను ప్రతిబింబిస్తుంది, పెద్ద జంతువులు స్వేచ్ఛగా సంచరిస్తాయి"
             }
         };
 
         languageOptions.forEach(option => {
             option.addEventListener('click', (e) => {
                 const selectedLang = e.target.getAttribute('data-lang');
-                
+
                 // Hide all language content
                 document.querySelectorAll('.lang-content').forEach(content => {
                     content.classList.remove('active');
                 });
-                
+
                 // Show selected language content
                 document.querySelectorAll(`[data-lang="${selectedLang}"]`).forEach(content => {
                     content.classList.add('active');
                 });
-                
+
                 // Update language button text
                 if (translations[selectedLang] && translations[selectedLang]['language-btn']) {
                     languageBtn.textContent = translations[selectedLang]['language-btn'];
                 }
-                
+
+                // Update hero slide content
+                for (let i = 1; i <= 5; i++) {
+                    if (translations[selectedLang]['slideTitle' + i]) {
+                        document.getElementById('slideTitle' + i).textContent = translations[selectedLang]['slideTitle' + i];
+                    }
+                    if (translations[selectedLang]['slideDesc' + i]) {
+                        document.getElementById('slideDesc' + i).textContent = translations[selectedLang]['slideDesc' + i];
+                    }
+                }
+
+                // Update logo, nav links, and footer
+                if (translations[selectedLang]['logoTitle']) {
+                    document.getElementById('logoTitle').textContent = translations[selectedLang]['logoTitle'];
+                }
+                if (translations[selectedLang]['navDest']) {
+                    document.getElementById('navDest').textContent = translations[selectedLang]['navDest'];
+                }
+                if (translations[selectedLang]['navFacts']) {
+                    document.getElementById('navFacts').textContent = translations[selectedLang]['navFacts'];
+                }
+                if (translations[selectedLang]['navContact']) {
+                    document.getElementById('navContact').textContent = translations[selectedLang]['navContact'];
+                }
+                if (translations[selectedLang]['footerText']) {
+                    document.getElementById('footerText').textContent = translations[selectedLang]['footerText'];
+                }
+
                 languageMenu.classList.remove('active');
             });
         });
