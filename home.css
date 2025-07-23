@@ -286,6 +286,96 @@ body {
 }
 
 
+/* Festivals and Culture Section */
+.festivals-culture {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #fff5f5, #f0f8ff);
+}
+
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.culture-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.culture-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.culture-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.culture-caption {
+    padding: 1.5rem;
+}
+
+.culture-caption h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #ff9933;
+}
+
+.culture-caption p {
+    color: #666;
+    line-height: 1.6;
+}
+
+button, a, .culture-item, .food-item, .dance-item {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Taste of India Section */
+.taste-india {
+    padding: 5rem 0;
+    background: #fff;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.food-item {
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+}
+
+.food-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-item h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(135deg, #ff9933, #ffb366);
+    margin: 0;
+}
+
+
 /* Dance Culture Section */
 .dance-culture {
     padding: 5rem 0;
