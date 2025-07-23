@@ -16,7 +16,7 @@ Examples of positive behavior:
 🌱 Our Values
 
 💡 Positive Contributions
-At TechXNinjas, we aim to build more than just projects — we build a learning ecosystem. Here's what we expect from all members:
+At DeshDarshan, we aim to build more than just projects — we build a learning ecosystem. Here's what we expect from all members:
 - 💬 Communicate with empathy and respect
 - 🔍 Provide honest, kind, and constructive feedback
 - 🤝 Help onboard beginners and support each other’s learning
@@ -42,7 +42,7 @@ The DeshDarshan Maintainers are responsible for:
 
 🌐 Scope
 This Code of Conduct applies to all areas where DeshDarshan is represented, including:
-- GitHub repositories (e.g. https://github.com/Sampadatiwari30 )
+- GitHub repositories (https://github.com/Sampadatiwari30)
 - Community channels (Discord, emails, GitHub discussions, etc.)
 - Events, workshops, or hackathons under the DeshDarshan banner
 - Any interaction, public or private, within the scope of the community
@@ -56,6 +56,7 @@ This Code of Conduct applies to all areas where DeshDarshan is represented, incl
 
 📄 Attribution:
 This Code of Conduct adapts the Contributor Covenant.
+[Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
 
 Let’s preserve India’s legacy responsibly!
 
