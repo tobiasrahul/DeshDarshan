@@ -1,10 +1,8 @@
 🌄 DeshDarshan Code of Conduct
 For a respectful, inclusive, and impactful journey through India’s heritage
 
-
 🤝 Our Pledge
 We, as contributors, maintainers, and community members of DeshDarshan, pledge to uphold India’s cultural heritage with respect and inclusivity. We commit to fostering an environment free from discrimination, regardless of age, ethnicity, gender, religion, disability, or background. Our goal is to create a space where everyone can celebrate India’s legacy with dignity and pride.
-
 
 🚦 Our Standards
 Examples of positive behavior:
@@ -30,7 +28,6 @@ To maintain integrity, we do not tolerate:
 - ⚠️ Harassment or discrimination – Based on caste, gender, nationality, etc.
 - 🔒 Unauthorized commercial use – Profiting from protected heritage without permission.
 
-
 🛠️ Responsibilities of Maintainers
 The DeshDarshan Maintainers are responsible for:
 - Enforcing this Code of Conduct fairly and consistently
@@ -39,27 +36,23 @@ The DeshDarshan Maintainers are responsible for:
 - Taking appropriate action — which may include edits, warnings, or removal
 - Being transparent and open about decisions
 
-
 🌐 Scope
 This Code of Conduct applies to all areas where DeshDarshan is represented, including:
-- GitHub repositories (https://github.com/Sampadatiwari30)
+- GitHub repositories (e.g. https://github.com/Sampadatiwari30 )
 - Community channels (Discord, emails, GitHub discussions, etc.)
 - Events, workshops, or hackathons under the DeshDarshan banner
 - Any interaction, public or private, within the scope of the community
-
 
 🧾 Contribution Guidelines:
 - All contributions should align with our community standards
 - PRs and issues should maintain professionalism and respect
 - Inappropriate behavior, even within commits or comments, will not be tolerated
 
-
 📄 Attribution:
 This Code of Conduct adapts the 
 [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
 
 Let’s preserve India’s legacy responsibly!
-
 
 🌟 Conclusion:
 - By joining DeshDarshan, you help protect India’s treasures for future generations. Let’s build a community rooted in respect, curiosity, and shared pride. 
