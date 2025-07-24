@@ -1,58 +1,69 @@
-🌄 DeshDarshan Code of Conduct
-For a respectful, inclusive, and impactful journey through India’s heritage
+# 🌄 DeshDarshan Code of Conduct  
+*For a respectful, inclusive, and impactful journey through India's heritage*  
 
-🤝 Our Pledge
-We, as contributors, maintainers, and community members of DeshDarshan, pledge to uphold India’s cultural heritage with respect and inclusivity. We commit to fostering an environment free from discrimination, regardless of age, ethnicity, gender, religion, disability, or background. Our goal is to create a space where everyone can celebrate India’s legacy with dignity and pride.
+## 🤝 Our Pledge  
 
-🚦 Our Standards
-Examples of positive behavior:
-- 💖 Respect monuments and nature – Leave no trace, vandalism is unacceptable.
-- 🤝 Honor local traditions – Dress modestly where required, ask before photographing rituals.
-- 📝 Educate and share – Spread accurate historical/cultural knowledge, not stereotypes.
-- 🌱 Support local communities – Buy ethically, avoid exploitative practices.
+We, as contributors, maintainers, and community members of DeshDarshan, pledge to:  
+- Uphold India's cultural heritage with respect and inclusivity  
+- Foster a discrimination-free environment  
+- Celebrate India's legacy with dignity and pride  
 
-🌱 Our Values
+## 🚦 Our Standards  
 
-💡 Positive Contributions
-At DeshDarshan, we aim to build more than just projects — we build a learning ecosystem. Here's what we expect from all members:
-- 💬 Communicate with empathy and respect
-- 🔍 Provide honest, kind, and constructive feedback
-- 🤝 Help onboard beginners and support each other’s learning
-- ✨ Accept differences in thought, experience, and background
-- 🌐 Collaborate with a community-first mindset
+### Positive Behavior:  
+- 💖 **Respect monuments** - Leave no trace, vandalism is unacceptable  
+- 🤝 **Honor traditions** - Dress appropriately, ask before photographing rituals  
+- 📝 **Share knowledge** - Spread accurate historical/cultural information  
+- 🌱 **Support communities** - Engage local artisans ethically  
 
-❌ Examples of Unacceptable Behavior
-To maintain integrity, we do not tolerate:
-- 🚫 Defacing heritage sites – Graffiti, littering, or removing artifacts.
-- 🛑 Disrespecting religious/cultural norms – Ignoring dress codes, intrusive behavior.
-- ⚠️ Harassment or discrimination – Based on caste, gender, nationality, etc.
-- 🔒 Unauthorized commercial use – Profiting from protected heritage without permission.
+## 🌱 Our Values  
 
-🛠️ Responsibilities of Maintainers
-The DeshDarshan Maintainers are responsible for:
-- Enforcing this Code of Conduct fairly and consistently
-- Reviewing contributions and communications respectfully
-- Addressing concerns or reports promptly
-- Taking appropriate action — which may include edits, warnings, or removal
-- Being transparent and open about decisions
+We expect all members to:  
+- 💬 Communicate with empathy  
+- 🔍 Provide constructive feedback  
+- 🤝 Support fellow learners  
+- ✨ Embrace diversity  
+- 🌐 Prioritize community  
 
-🌐 Scope
-This Code of Conduct applies to all areas where DeshDarshan is represented, including:
-- GitHub repositories (e.g. https://github.com/Sampadatiwari30 )
-- Community channels (Discord, emails, GitHub discussions, etc.)
-- Events, workshops, or hackathons under the DeshDarshan banner
-- Any interaction, public or private, within the scope of the community
+## ❌ Unacceptable Behavior:
 
-🧾 Contribution Guidelines:
-- All contributions should align with our community standards
-- PRs and issues should maintain professionalism and respect
-- Inappropriate behavior, even within commits or comments, will not be tolerated
+We do not tolerate:  
+- 🚫 Defacing heritage sites (graffiti, littering)  
+- 🛑 Disrespecting cultural/religious norms  
+- ⚠️ Harassment or discrimination  
+- 🔒 Unauthorized commercial use  
 
-📄 Attribution:
-This Code of Conduct adapts the 
-[Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
+## 🛠️ Maintainer Responsibilities:
 
-Let’s preserve India’s legacy responsibly!
+- Fair enforcement of these guidelines  
+- Respectful review of contributions  
+- Prompt response to concerns  
+- Transparent moderation decisions  
 
-🌟 Conclusion:
-- By joining DeshDarshan, you help protect India’s treasures for future generations. Let’s build a community rooted in respect, curiosity, and shared pride. 
+## 🌐 Scope:
+
+Applies to all DeshDarshan spaces including:  
+- GitHub (https://github.com/sampadatiwari30)
+- Communication channels (Discord, emails)  
+- Events and workshops  
+- Any community interactions  
+
+## 🧾 Contribution Guidelines:
+
+- Maintain professionalism in PRs/issues  
+- Align with community standards  
+- Inappropriate content will be removed  
+
+## 📄 Attribution:
+
+Adapted from the 
+[Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)  
+
+## 🌟 Conclusion: 
+
+By joining DeshDarshan, you become a guardian of India's heritage. Together, let's:  
+- Celebrate with **respect**  
+- Preserve with **pride**  
+- Pass forward with **responsibility**
+  
+*Keeping our shared history alive for generations to come.*  
