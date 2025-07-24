@@ -8,6 +8,8 @@ We, as contributors, maintainers, and community members of DeshDarshan, pledge t
 - Foster a discrimination-free environment  
 - Celebrate India's legacy with dignity and pride  
 
+---
+
 ## 🚦 Our Standards  
 
 ### Positive Behavior:  
@@ -15,6 +17,8 @@ We, as contributors, maintainers, and community members of DeshDarshan, pledge t
 - 🤝 **Honor traditions** - Dress appropriately, ask before photographing rituals  
 - 📝 **Share knowledge** - Spread accurate historical/cultural information  
 - 🌱 **Support communities** - Engage local artisans ethically  
+
+---
 
 ## 🌱 Our Values  
 
@@ -25,6 +29,8 @@ We expect all members to:
 - ✨ Embrace diversity  
 - 🌐 Prioritize community  
 
+---
+
 ## ❌ Unacceptable Behavior:
 
 We do not tolerate:  
@@ -33,12 +39,16 @@ We do not tolerate:
 - ⚠️ Harassment or discrimination  
 - 🔒 Unauthorized commercial use  
 
+---
+
 ## 🛠️ Maintainer Responsibilities:
 
 - Fair enforcement of these guidelines  
 - Respectful review of contributions  
 - Prompt response to concerns  
 - Transparent moderation decisions  
+
+---
 
 ## 🌐 Scope:
 
@@ -48,16 +58,22 @@ Applies to all DeshDarshan spaces including:
 - Events and workshops  
 - Any community interactions  
 
+---
+
 ## 🧾 Contribution Guidelines:
 
 - Maintain professionalism in PRs/issues  
 - Align with community standards  
 - Inappropriate content will be removed  
 
+---
+
 ## 📄 Attribution:
 
 Adapted from the 
 [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)  
+
+---
 
 ## 🌟 Conclusion: 
 
